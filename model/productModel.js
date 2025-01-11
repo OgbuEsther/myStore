@@ -8,6 +8,9 @@ const userSchema = new mongoose.Schema({
     Availability:{type: Boolean} ,
 
     Category: {type: String},
+
+   
+    productImage : {type : String}
     
 })
 
