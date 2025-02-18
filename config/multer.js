@@ -12,6 +12,8 @@ const storage = multer.diskStorage({
   },
 });
 
+//bag.png
+
 // File filter to only accept certain file types (e.g., images)
 const fileFilter = (req, file, cb) => {
   const ext = path.extname(file.originalname).toLowerCase();
@@ -28,7 +30,7 @@ const limits = { fileSize: 5 * 1024 * 1024 }; // 5 MB
 
 // Set up multer middleware for file uploads
 const upload = multer({
-  storage,
+ storage ,
   fileFilter,
   limits,
 });
